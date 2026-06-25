@@ -1,0 +1,80 @@
+/* ตั้งค่าแถบเมนูให้อยู่ติดขอบบนเสมอ */
+.main-header { 
+  position: fixed; 
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  background-color: #ffffff; 
+  border-bottom: 1px solid #3d6dff; 
+  z-index: 100; 
+}
+
+.header-container { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px; 
+  max-width: 1200px; 
+  margin: 0 auto; 
+}
+
+.logo { 
+  font-weight: bold; 
+  font-size: 20px; 
+  color: #404040; 
+}
+
+/* ซ่อนเมนู Desktop ไว้ก่อนในหน้าจอมือถือ */
+.desktop-nav { 
+  display: none; 
+  gap: 30px; 
+}
+
+.desktop-nav a { 
+  text-decoration: none; 
+  color: #404040; 
+  font-weight: bold; 
+  transition: color 0.2s; 
+}
+
+.desktop-nav a:hover { 
+  color: #3d6dff; 
+}
+
+/* ปุ่มมือถือ */
+.mobile-menu-btn { 
+  background: none; 
+  border: none; 
+  color: #3d6dff; 
+  cursor: pointer; 
+  display: flex; 
+  align-items: center; 
+}
+
+/* ตั้งค่าเมนูมือถือเวลาเปิด */
+.mobile-nav { 
+  display: none; 
+  flex-direction: column; 
+  padding: 0 20px 20px 20px; 
+  background-color: #ffffff; 
+  border-bottom: 1px solid #3d6dff; 
+}
+
+.mobile-nav.open { 
+  display: flex; 
+}
+
+.mobile-nav a { 
+  padding: 15px 0; 
+  text-decoration: none; 
+  color: #404040; 
+  border-bottom: 1px solid #f3f4f6; 
+  font-weight: 500;
+}
+
+/* เมื่อหน้าจอใหญ่กว่า 768px (Tablet/Desktop) ให้โชว์เมนูเต็ม และซ่อนปุ่มมือถือ */
+@media(min-width: 768px) { 
+  .desktop-nav { display: flex; } 
+  .mobile-menu-btn { display: none; } 
+  .mobile-nav { display: none !important; }
+}

@@ -1,0 +1,22 @@
+.detail-section { padding: 60px 0 100px; }
+
+.back-link { 
+  display: inline-block; 
+  margin-bottom: 30px; 
+  color: var(--dark); 
+  text-decoration: none; 
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.back-link:hover { color: var(--primary); }
+
+.detail-image-container img { 
+  width: 100%; 
+  border-radius: 12px; 
+  margin: 30px 0; 
+  background-color: #f3f4f6;
+}
+
+.detail-content { font-size: 1.1rem; line-height: 1.8; }
+.detail-content p { margin-bottom: 20px; }

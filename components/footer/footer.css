@@ -1,0 +1,44 @@
+.main-footer { 
+  background-color: #ffffff; 
+  border-top: 1px solid #3d6dff; 
+  padding: 50px 20px; 
+  text-align: center; 
+  /* ดัน footer ให้อยู่ล่างสุดเสมอ */
+  margin-top: auto; 
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-title { 
+  margin-bottom: 20px; 
+  color: #404040; 
+  font-size: 1.8rem;
+}
+
+.footer-links p { 
+  margin-bottom: 12px; 
+  font-size: 1.1rem;
+  color: #404040;
+}
+
+.footer-links a {
+  color: #3d6dff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #f3f4f6;
+  color: #666666;
+  font-size: 0.95rem;
+}
