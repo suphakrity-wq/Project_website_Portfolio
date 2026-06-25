@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio — Suphakrit</title>
   
-  <link rel="stylesheet" href="/css/global.css">
-  <link rel="stylesheet" href="/components/header/header.css">
-  <link rel="stylesheet" href="/components/footer/footer.css">
+  <!-- เอาเครื่องหมาย / ด้านหน้าออก เพื่อให้เป็น Relative Path -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="components/header/header.css">
+  <link rel="stylesheet" href="components/footer/footer.css">
   
-  <link rel="stylesheet" href="/css/page-index.css">
+  <link rel="stylesheet" href="css/page-index.css">
 </head>
 <body>
   <div id="header-placeholder"></div>
@@ -27,7 +28,7 @@
         <h2 class="section-title">About Me — Background & experience</h2>
         <div class="about-grid">
           <div class="profile-img-container">
-            <img src="assets/images/profile.png" alt="Suphakrit" class="profile-img" onerror="this.src='https://via.placeholder.com/350x460?text=Profile'">
+            <img src="assets/images/profile.png" alt="Suphakrit" class="profile-img" onerror="this.src=''">
           </div>
           <div class="about-details">
             <div class="info-block">
@@ -46,7 +47,9 @@
 
   <div id="footer-placeholder"></div>
 
-  <script src="/components/header/header.js"></script>
-  <script src="/js/data.js"></script>
+  <script src="components/header/header.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/global.js"></script>
+  <script src="js/page-index.js"></script>
 </body>
 </html>
